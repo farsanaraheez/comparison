@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison</title>
+</head>
+<body>
+    <form name="ageform">
+        <label name="age" >Enter Age</label>
+    <input type="text" name="age" >
+    <input type="button" value="submit" onclick="compare()">
+   
+    </form>
+    <script>
+        function compare(){
+            var x = parseInt(ageform.age.value);
+           
+            if (x>15){
+               alert('You Are Adult'); 
+            } 
+            else(x<15)
+            {
+               alert('you are child');
+            }  
+             }
+    </script>
+</body>
+</html>
